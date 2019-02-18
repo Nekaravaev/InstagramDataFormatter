@@ -23,15 +23,18 @@ _It would be great to drop here a link to request for data from Instagram?_
 Clone repository and install required dependencies
 
 ```sh
-$ git clone git@github.com:Nekaravaev/InstagramDataFormatter.git idf
-$ cd idf
-$ composer install
+sudo apt-get install php composer php-curl php-zip
+sudo phpenmod zip
+sudo service apache2 restart
+git clone https://github.com/Nekaravaev/InstagramDataFormatter.git idf
+cd idf
+composer install
 ```
 
 Then pass to script zip-file name and username at Instagram
 
 ```sh
-$ php instagram.php -z zipname.php -u username
+php instagram.php -z zipname.zip -u username
 ```
 
 ### Todos
